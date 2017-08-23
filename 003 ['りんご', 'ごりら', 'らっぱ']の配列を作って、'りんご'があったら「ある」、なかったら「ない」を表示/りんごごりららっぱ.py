@@ -7,10 +7,8 @@ Created on Wed Aug 23 11:07:35 2017
 
 list_tango = ['りんご', 'ごりら', 'らっぱ']
 
-for i in list_tango:
-    
-    if 'りんご' == i:
-        print('ある') 
-    else:
-        print('ない')
+if 'りんご' in list_tango:
+    print('ある')
+else:
+    print('ない')
         
