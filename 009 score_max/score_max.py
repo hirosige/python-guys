@@ -15,6 +15,16 @@ class Teacher:
     def add_student(self, student):
         self.students.append(student)
 
+    def calc_scoremax(self):
+        result = 0
+        
+        for student in self.students:
+            if result < student.get_score():
+                
+                result = student.get_score()
+                
+        return result
+        
     def calc_average(self):
         total = 0
 
@@ -41,7 +51,7 @@ class Student:
 
 teacher = Teacher('花子')
 
-for i in range(1000000):
+for i in range(100):
 
     student = Student('student_' + str(i))
     student.set_score(random.randint(1, 100))
@@ -51,4 +61,5 @@ for i in range(1000000):
 print(teacher.get_name() + '先生の計算によると、')
 print('全体の人数は：{0}人'.format(len(teacher.students)))
 print('全体の平均は：{0}点'.format(teacher.calc_average()))
+print('最高得点は{0}点'.format(teacher.calc_scoremax()))
 print('でした。次も頑張って下さい')
