@@ -23,4 +23,4 @@ class Judge:
             print('期待通り')            
             
         else:
-            print('期待以上')
+            print('期待以上!')

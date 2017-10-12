@@ -12,7 +12,7 @@ score = input('テストの点数を入力して下さい。→')
 score = int(score)
 print(score)
 mens = []
-for i in range(10):
+for i in range(11):
     judgeman = Judge('Judgeman' + str(i))
 
     standard = random.randint(0,100)
