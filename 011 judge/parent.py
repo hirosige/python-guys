@@ -1,5 +1,6 @@
 import random
 
+
 class Parent:
 
     def __init__(self, name, point, judge):
@@ -17,15 +18,15 @@ class Parent:
         exval = random.randint(0, 100)
 
         if score < exval:
-            self.judge = '期待以下でした'
+            self.judge = '期待以下'
             self.point = 1
 
         elif score == exval:
-            self.judge = '期待通りでした'
+            self.judge = '期待通り'
             self.point = 3
 
         else:
-            self.judge = '期待以上でした'
+            self.judge = '期待以上'
             self.point = 5
 
     def get_judge(self):
